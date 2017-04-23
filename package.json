@@ -14,7 +14,7 @@
     "rollup",
     "plugin"
   ],
-  "author": "Audi Nugraha",
+  "author": "@audinue",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/audinue/rollup-plugin-execute/issues"
