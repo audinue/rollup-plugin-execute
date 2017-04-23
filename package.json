@@ -1,0 +1,23 @@
+{
+  "name": "rollup-plugin-execute",
+  "version": "1.0.0",
+  "description": "Execute shell command(s) sequentially when the bundle is generated.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audinue/rollup-plugin-execute.git"
+  },
+  "keywords": [
+    "rollup",
+    "plugin"
+  ],
+  "author": "Audi Nugraha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/audinue/rollup-plugin-execute/issues"
+  },
+  "homepage": "https://github.com/audinue/rollup-plugin-execute#readme"
+}
