@@ -10,7 +10,7 @@ function execute (commands) {
     }
     return {
         name: 'execute',
-        ongenerate: function () {
+        generateBundle: function () {
             var copy = commands.slice(0)
             var next = function () {
                 var command
