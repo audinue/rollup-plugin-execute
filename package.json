@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-execute",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Execute shell command(s) sequentially when the bundle is generated.",
   "main": "index.js",
   "scripts": {
