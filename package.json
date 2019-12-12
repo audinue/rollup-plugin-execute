@@ -4,8 +4,13 @@
   "description": "Execute shell command(s) sequentially when the bundle is generated.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json"
   },
+  "//": "Add only declaration files in package. `index.js`, `package.json` & `README.md` are packed by default.",
+  "files": [
+    "index.d.ts"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/audinue/rollup-plugin-execute.git"
@@ -15,9 +20,25 @@
     "plugin"
   ],
   "author": "@audinue",
+  "contributors": [
+    {
+      "name": "GerkinDev",
+      "email": "agermain@ithoughts.io",
+      "url": "https://ithoughts.io/"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/audinue/rollup-plugin-execute/issues"
   },
-  "homepage": "https://github.com/audinue/rollup-plugin-execute#readme"
+  "homepage": "https://github.com/audinue/rollup-plugin-execute#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "rollup": "^1.27.11",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "peerDependencies": {
+    "rollup": "^1.0.0"
+  }
 }

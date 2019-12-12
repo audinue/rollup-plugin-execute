@@ -1,0 +1,5 @@
+
+node_modules/
+# Do not commit those files: they are results of `npm run build`.
+index.js
+index.d.ts
