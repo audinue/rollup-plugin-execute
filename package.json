@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/audinue/rollup-plugin-execute/issues"
   },
-  "homepage": "https://github.com/audinue/rollup-plugin-execute#readme"
+  "homepage": "https://github.com/audinue/rollup-plugin-execute#readme",
+  "peerDependencies": {
+    "rollup": "^1.0.0"
+  }
 }

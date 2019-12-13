@@ -36,9 +36,19 @@ export default {
             'robocopy src public index.html',
             // Then open the browser
             'start firefox -new-window "' + path.join(process.cwd(), 'public', 'index.html') + '"'
-        ])
+        ], {
+            sync: true,
+            hooks: ['generateBundle', 'writeBundle'],
+        })
     ]
 }
 ```
+
+## Options
+
+Additionally to the scripts array, a 2nd optional object parameter is accepted. It can have the following properties:
+
+* **sync** (*optional*, defaults to `false`): set it to `true` to execute scripts in a blocking-way.
+* **hooks** (*optional*, defaults to `["generateBundle"]`): One or an array of [valid hook names](https://rollupjs.org/guide/en/#hooks) to execute scripts on. For instance, if you want to use it as an output plugin (executed at the total end of the build), use the [`"writeBundle"` hook](https://rollupjs.org/guide/en/#writebundle).
 
 Enjoy!
